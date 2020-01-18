@@ -102,7 +102,7 @@ case $ARCH in
             echo "[ERROR] Please set machine for $ARCH"
             exit 1
         fi
-        HOMEASSISTANT_DOCKER="$DOCKER_REPO/raspberrypi4-64-homeassistant"
+        HOMEASSISTANT_DOCKER="homeassistant/raspberrypi4-64-homeassistant"
         HASSIO_DOCKER="$DOCKER_REPO/aarch64-hassio-supervisor"
     ;;
     *)
