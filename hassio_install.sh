@@ -86,16 +86,16 @@ case $ARCH in
             echo "[ERROR] Please set machine for $ARCH"
             exit 1
         fi
-        HOMEASSISTANT_DOCKER="$DOCKER_REPO/$MACHINE-homeassistant"
-        HASSIO_DOCKER="$DOCKER_REPO/armhf-hassio-supervisor"
+        HOMEASSISTANT_DOCKER="homeassistant/raspberrypi4-64-homeassistant"
+        HASSIO_DOCKER="$DOCKER_REPO/aarch64-hassio-supervisor"
     ;;
     "armv7l")
         if [ -z $MACHINE ]; then
             echo "[ERROR] Please set machine for $ARCH"
             exit 1
         fi
-        HOMEASSISTANT_DOCKER="$DOCKER_REPO/$MACHINE-homeassistant"
-        HASSIO_DOCKER="$DOCKER_REPO/armv7-hassio-supervisor"
+        HOMEASSISTANT_DOCKER="homeassistant/raspberrypi4-64-homeassistant"
+        HASSIO_DOCKER="$DOCKER_REPO/aarch64-hassio-supervisor"
     ;;
     "aarch64")
         if [ -z $MACHINE ]; then
